@@ -6,7 +6,6 @@ This is my first Project on Github! I´m Ekulmann and this is my first project w
 - *change color*
 - *change png´s*
 - *change name-tags, text*
-- *change bo*
 - *change boxes*
 - *teamspeak and discord labels*
 
