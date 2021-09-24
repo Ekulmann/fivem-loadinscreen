@@ -18,27 +18,74 @@
     <div class="footer">
         <img src="loading2.jpg">
     </div>
-    <div class="callout">
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+<!--<div class="callout">
         <img src="teamspeak.png">
-    </div>
-    <div class="discord">
+    </div> -->
+    <!--<div class="discord">
         <img src="discord.png">
-    </div>
+    </div> !-->
         <!-- audio -->
         <div id="audio">
             <audio controls loop autoplay hidden>
             <!-- Audio is looped, plays automatically and is hidden -->
                 <source src="song.mp3" type="audio/mp3">
-                <audio src="song.mp3" volume="0.2" audio>
             </audio>
         </div>
-
+        <script>
+            var play = false;
+                    var vid = document.getElementById("audio");
+                    vid.volume = 0.05;
+                    window.addEventListener('keyup', function(e)
+                    {
+                        if (e.which == 69){
+                            vid.volume = Math.min(vid.volume + 0.1,1);
+                        } else if(e.which == 65){
+                            vid.volume = Math.max(vid.volume - 0.1,0);
+                        };
+                    });
+            
+                    var audio = document.querySelector('audio');
+            
+                    if (audio) {
+            
+                    window.addEventListener('keydown', function (event) {
+            
+                    var key = event.which || event.keyCode;
+            
+                    if (key === 32) { // spacebar
+            
+                    event.preventDefault();
+            
+                    audio.paused ? audio.play() : audio.pause();
+                  
+                }
+            
+              });
+            }
+            </script>
 
             
 
 
         <!--<p class="borderexample">clusterv</p>
 
+
+            
            dark-footer     -->
         <div class="footer-dark" style="margin-bottom: 0px;height: 300px;padding-top: 75px;">
             <footer style="height: 241px;">
@@ -61,15 +108,12 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
                 <footer>
 
 
 </body>
 </html>
-
-
-
-
-
-
-

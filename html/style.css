@@ -3,7 +3,7 @@
     font-size: 30px;
 }
 .bg {
-    background-color: #006c9e
+    background-color: #282d32
     ;
 }
 
@@ -44,13 +44,13 @@
 .callout {
     position: absolute;
     top: 85%;
-    left: 10%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 .discord {
   position: absolute;
   top: 85%;
-  left: 90%;
+  left: 120%;
   transform: translate(-50%, -50%);
 }
 
@@ -154,15 +154,11 @@
     left: 50%;
 }
 
+html {
+  cursor: pointer;
+  color: #d69d00;
 
-
-
-
-
-
-
-
-
+}
 
 
 
